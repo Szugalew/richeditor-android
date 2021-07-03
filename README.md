@@ -1,10 +1,14 @@
 I fixed the checkboxes and text coloring
-To use download richeditor module, not sample
-In android studio import module
-Then add 
-    implementation project(path: ':richeditor')
-to app gradle
 
+To use download the `richeditor` module, not sample
+
+In android studio import module
+
+Then add 
+
+    implementation project(path: ':richeditor')
+    
+to app gradle
 
 
 
