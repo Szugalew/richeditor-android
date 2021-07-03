@@ -18,7 +18,6 @@ android {
     debug {
       debuggable true
       zipAlignEnabled true
-      signingConfig signingConfigs.debug
     }
     release {
       debuggable false
@@ -26,7 +25,6 @@ android {
       minifyEnabled true
       proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
       shrinkResources true
-      signingConfig signingConfigs.debug
     }
   }
 }
