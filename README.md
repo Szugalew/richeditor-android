@@ -1,3 +1,14 @@
+I fixed the checkboxes and text coloring
+To use download richeditor module, not sample
+In android studio import module
+Then add 
+    implementation project(path: ':richeditor')
+to app gradle
+
+
+
+
+
 <p align="center">
   <a href="https://pub.dev/packages/flutter_gen">
     <img src="https://github.com/wasabeef/richeditor-android/raw/master/art/logo.png" width="480px"/>
