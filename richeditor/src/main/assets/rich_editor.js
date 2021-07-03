@@ -253,9 +253,23 @@ RE.insertLink = function(url, title) {
     RE.callback();
 }
 
+
 RE.setTodo = function(text) {
-    var html = '<input type="checkbox" name="'+ text +'" value="'+ text +'"/> &nbsp;';
+    text = 'checkbox_' + text
+    var html = '<input type="checkbox" name="'+ text +'" value="unchecked" onclick="updateChecked(\''+ text +'\')"/> &nbsp;';
     document.execCommand('insertHTML', false, html);
+
+}
+
+function updateChecked(x) {
+     var str = 'input[name='+ x +']'
+     var checkbox = document.querySelector(str);
+
+     if(checkbox.checked) {
+          checkbox.value = "checked"
+     } else {
+          checkbox.value = "unchecked"
+     }
 }
 
 RE.prepareInsert = function() {
